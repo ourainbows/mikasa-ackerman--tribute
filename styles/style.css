@@ -73,7 +73,7 @@ ul .show {
 
 .character::after {
   /* Usamos after para poner el poligono sobre el circulo*/
-  /* content: ""; */ /* Si omitimos esta linea no podremos observar el poligono */
+  content: ""; /* Si omitimos esta linea no podremos observar el poligono */
   position: absolute;
   bottom: -1px;
   width: 100%;
@@ -82,20 +82,22 @@ ul .show {
   clip-path: polygon(100% 0, 0 100%, 100% 100%); /* Creamos el slanted header */
 }
 .character-circle {
-  height: 140vh;
   width: 80vw;
-  background-color: #968b75;
-  border-radius: 50%;
-  position: relative;
-  left: -35%;
-  top: 40%;
-}
-.character-circle figure {
+  height: 80vh;
+  background: #968b75;
+  border-radius: 0 100% 0 0;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
-  width: 100%;
-  height: auto;
+}
+.character-circle figure img {
+  position: absolute;
+  bottom: 0;
+  left: -18px;
+  /*   width: 100%;
+  height: auto; */
+  width: 40vw;
+  height: 105%;
 }
 .title {
   display: flex;
@@ -183,7 +185,7 @@ ul .show {
   bottom: -1px;
   width: 100%;
   height: 10%; /* Con esto manejamos la altura de nuestro poligono*/
-  background-color:#968b75;
+  background-color: #968b75;
   clip-path: polygon(100% 0, 0 100%, 100% 100%); /* Creamos el slanted header */
 }
 .clients div {
@@ -218,7 +220,6 @@ footer {
 .footer-icons {
   font-size: 4rem;
   display: flex;
-
 }
 .footer-icons span {
   padding: 0 8rem;
@@ -226,7 +227,6 @@ footer {
 .footer-copy {
   text-align: center;
 }
-
 
 @media only screen and (max-device-width: 480px) {
   .btn-menu {
@@ -237,28 +237,50 @@ footer {
     display: none;
   }
   /* main */
-  .main-content article{
+  .main-content article {
     font-size: 2.5rem;
     padding: 2rem 3rem;
   }
+  .character-circle figure img {
+    /*   width: 100%;
+  height: auto; */
+    width: 60vw;
+  }
+  .title {
+    padding-bottom: 3rem;
+    padding-right: 1.3rem;
+    top: 40px;
+  }
+  .title h1 {
+    font-size: 6rem;
+    line-height: 70px;
+  }
+  .title p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .contact-button {
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+  }
   /* clients */
-  .clients{
+  .clients {
     height: 200vh;
     justify-content: space-evenly;
   }
-  .clients div{
+  .clients div {
     align-items: center;
     padding: 0 2rem;
   }
   .clients div article {
     padding: 0 2rem;
   }
-  .clients-3{
+  .clients-3 {
     margin-bottom: 4rem;
   }
   /*footer*/
-  .footer-icons span{
+  .footer-icons span {
     padding: 0 2rem;
   }
-
 }
