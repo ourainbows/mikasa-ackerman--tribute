@@ -26,7 +26,7 @@ body {
 }
 .menu {
   background-color: #201e1f;
-  width: 100vw;
+
   height: 10vh;
   display: flex;
   justify-content: space-between;
@@ -60,7 +60,6 @@ body {
 /* character */
 .character {
   position: relative;
-  width: 100vw;
   height: 85vh;
   background-color: #201e1f;
   display: flex;
