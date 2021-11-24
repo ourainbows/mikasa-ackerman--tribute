@@ -17,10 +17,10 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  color: white;
 }
 .logo {
   font-family: "Wcmano", cursive;
-  color: #ffffff;
   font-size: 4rem;
   cursor: pointer;
 }
@@ -41,11 +41,11 @@ body {
   margin: 0 0.8rem;
 }
 .menu-items li a {
+  color: #ffffff;
   text-decoration: none;
   font-size: 1.6rem;
   margin: 0.8rem 0.5rem;
   display: block; /* Los a ocupan todo el espacio de los li*/
-  color: #ffffff;
 }
 .menu-items li:hover {
   background-color: #968b75;
@@ -56,9 +56,6 @@ body {
   font-size: 1.6rem;
   cursor: pointer;
   display: none;
-}
-ul .show {
-  top: 65px;
 }
 /* character */
 .character {
@@ -94,8 +91,6 @@ ul .show {
   position: absolute;
   bottom: 0;
   left: -18px;
-  /*   width: 100%;
-  height: auto; */
   width: 40vw;
   height: 105%;
 }
@@ -112,19 +107,17 @@ ul .show {
   font-family: "Playlist";
   font-size: 15rem;
   line-height: 150px;
-  color: white;
 }
 .title p {
   font-size: 2rem;
-  color: white;
   margin-bottom: 2rem;
 }
 .contact-button {
   font-family: "Open Sans", sans-serif;
   font-size: 2rem;
   background: #201e1f;
+  color: #ffffff;
   border: 2px solid #ffffff;
-  color: #ffff;
   height: 5rem;
   width: 20rem;
   cursor: pointer;
@@ -136,17 +129,18 @@ ul .show {
 
 /*Main content*/
 .main-content::after {
-  content: ""; /* Si omitimos esta linea no podremos observar el poligono */
+  content: "";
   position: absolute;
   bottom: -1px;
   width: 100%;
-  height: 10%; /* Con esto manejamos la altura de nuestro poligono*/
+  height: 10%;
   margin: 0;
   background-color: #201e1f;
-  clip-path: polygon(100% 0, 0 100%, 100% 100%); /* Creamos el slanted header */
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 .main-content {
   background-color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -175,18 +169,17 @@ ul .show {
   flex-direction: column;
   height: 130vh;
   background-color: #201e1f;
-  color: #ffff;
   font-size: 1.6rem;
   padding: 0.8rem 4rem 0 0;
 }
 .clients::after {
-  content: ""; /* Si omitimos esta linea no podremos observar el poligono */
+  content: "";
   position: absolute;
   bottom: -1px;
   width: 100%;
-  height: 10%; /* Con esto manejamos la altura de nuestro poligono*/
+  height: 10%;
   background-color: #968b75;
-  clip-path: polygon(100% 0, 0 100%, 100% 100%); /* Creamos el slanted header */
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
 }
 .clients div {
   display: flex;
@@ -203,12 +196,9 @@ ul .show {
 /*Footer*/
 footer {
   background-color: #968b75;
-  color: white;
   font-size: 2rem;
 }
 .footer-principal {
-  background-color: #968b75;
-  color: white;
   font-size: 2rem;
   display: flex;
   align-items: center;
@@ -231,7 +221,6 @@ footer {
 @media only screen and (max-device-width: 480px) {
   .btn-menu {
     display: inline-flex;
-    color: white;
   }
   .menu-items {
     display: none;
@@ -242,8 +231,6 @@ footer {
     padding: 2rem 3rem;
   }
   .character-circle figure img {
-    /*   width: 100%;
-  height: auto; */
     width: 60vw;
   }
   .title {
